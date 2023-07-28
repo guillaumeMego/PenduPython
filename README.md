@@ -26,7 +26,7 @@ python main.py
 ```
 
 ## Contribuer
-Les contributions sont les bienvenues ! Si vous souhaitez apporter des améliorations, veuillez soumettre une demande d'extraction. Nous examinerons avec plaisir vos propositions.
+Les contributions sont les bienvenues ! 
 
 ## Auteurs
 Ganne Guillaume
