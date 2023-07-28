@@ -22,7 +22,7 @@ Avant de lancer le jeu, assurez-vous d'avoir installé Python sur votre système
 Pour lancer le jeu, exécutez la commande suivante :
 
 ```bash
-python jeu_du_pendu.py
+python main.py
 ```
 
 ## Contribuer
