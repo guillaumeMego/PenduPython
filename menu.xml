@@ -25,8 +25,8 @@
             <command>editer_mots</command>
         </lien>
         <lien>
-            <label>Editer les niveaux</label>
-            <command>editer_niveaux</command>
+            <label>Editer les themes</label>
+            <command>editer_themes</command>
         </lien>
     </menu>
     <menu categorie="A propos">

@@ -2,7 +2,7 @@ from PenduDb import PenduDb
 from tkinter import *
 from tkinter import simpledialog, messagebox
 
-class Edition:
+class EditionMots:
     # edition des mots et des themes de la bdd
     def __init__(self, fenetre):
         self.fenetre = fenetre
@@ -138,6 +138,6 @@ class Edition:
 
 if __name__ == "__main__":
     root = Tk()
-    edition = Edition(root)
+    edition = EditionMots(root)
     root.mainloop()
 

@@ -2,7 +2,8 @@ import tkinter as tk
 import xml.etree.ElementTree as ET
 from Themes import Themes
 from tkinter import messagebox
-from Edition import Edition
+from EditionMots import EditionMots
+from EditionThemes import EditionThemes
 
 class PenduMenu:
     """ 
@@ -55,7 +56,10 @@ class PenduMenu:
             messagebox.showinfo("A propos", "Jeu du pendu\n\nProgramme sous licence GPL3")
 
         if command == "editer_mots": 
-            self.edition = Edition(tk.Toplevel(self.root))
+            self.edition = EditionMots(tk.Toplevel(self.root))
+        
+        if command == "editer_themes":
+            self.edition = EditionThemes(tk.Toplevel(self.root))
             
 
         if hasattr(self.parent, command):

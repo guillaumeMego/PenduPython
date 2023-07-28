@@ -59,6 +59,20 @@ class PenduDb:
         self.c.execute("INSERT INTO themes (nom) VALUES (?)", (nom_theme,))
         self.conn.commit()
 
+    def supprimer_theme(self, nom_theme):
+        """
+        Supprime un thème de la base de données.
+        """
+        self.c.execute("DELETE FROM themes WHERE nom=?", (nom_theme,))
+        self.conn.commit()
+
+    def modifier_theme(self, ancien_nom_theme, nouveau_nom_theme):
+        """
+        Modifie un thème dans la base de données.
+        """
+        self.c.execute("UPDATE themes SET nom=? WHERE nom=?", (nouveau_nom_theme, ancien_nom_theme))
+        self.conn.commit()
+
     def lister_mots_par_theme(self, theme):
         """
         Renvoie la liste des mots du thème spécifié.
