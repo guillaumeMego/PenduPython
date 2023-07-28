@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd"[]>
+<menus>
+    <menu categorie="fichiers">
+        <lien>
+            <label>Nouvelle partie</label>
+            <command>choisir_nouvelle_partie</command>
+        </lien>
+        <lien>
+            <label>Niveaux / thèmes</label>
+            <command>themes</command>
+        </lien>
+        <lien>
+            <label>Apparence</label>
+            <command>apparence</command>
+        </lien>
+        <lien>
+            <label>Quitter</label>
+            <command>fermer_fenetre</command>
+        </lien>
+    </menu>
+    <menu categorie="édition">
+        <lien>
+            <label>Editer les mots</label>
+            <command>editer_mots</command>
+        </lien>
+        <lien>
+            <label>Editer les niveaux</label>
+            <command>editer_niveaux</command>
+        </lien>
+    </menu>
+    <menu categorie="A propos">
+        <lien>
+            <label>Licence</label>
+            <command>a_propos</command>
+        </lien>
+    </menu>
+</menus>

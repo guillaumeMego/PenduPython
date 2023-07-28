@@ -1,0 +1,13 @@
+{
+    "canevas": "black",
+    "letters" : {
+        "active": "write",
+        "used": "grey",
+        "border": "black"
+    },
+    "line" : {
+        "color": "black",
+        "width": 2
+    },
+    "theme" : 1
+}
