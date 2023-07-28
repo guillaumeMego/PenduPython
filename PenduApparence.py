@@ -46,7 +46,7 @@ class PenduApparence:
             ligne_alphabet = alphabet[i * 10: (i + 1) * 10]
             for j, lettre in enumerate(ligne_alphabet):
                 bouton_lettre = Button(self.frame_droit, text=lettre, command=lambda l=lettre: self.proposer_lettre(l))
-                bouton_lettre.grid(row=i, column=j, padx=2, pady=2)  # Utiliser grid au lieu de pack
+                bouton_lettre.grid(row=i, column=j, padx=2, pady=2)
 
                 bouton_lettre.config(width=2, height=2, font=("Helvetica", 20),
                                     bg="lightblue", 

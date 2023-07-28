@@ -5,6 +5,18 @@ from PenduMenu import PenduMenu
 from PenduJeuLogique import PenduJeuLogique
 
 class PenduJeuGraphique(PenduJeuLogique):
+    """
+    Classe pour le jeu du pendu en mode graphique.
+    Attributes:
+        fenetre (Tk): La fenêtre principale du jeu.
+        canvas (Canvas): Le canvas sur lequel tracer le pendu.
+        frame_alphabet (Frame): Le frame pour l'alphabet et le mot.
+        menu_creator (PenduMenu): L'instance de PenduMenu.
+        apparence (PenduApparence): L'instance de PenduApparence.
+        frame_tirets (Frame): Le frame pour les tirets.
+        label_mot (Label): Le label pour le mot.
+        pendu (PenduSvg): L'instance de PenduSvg.
+    """
     def __init__(self, fenetre):
         super().__init__(fenetre)
 

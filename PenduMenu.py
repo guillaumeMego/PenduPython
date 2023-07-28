@@ -51,7 +51,6 @@ class PenduMenu:
             self.parent.mettre_a_jour_theme_selectionne(self.themes.theme_selectionne)
 
         if command == "a_propos":
-            #message programme gpl3
             messagebox.showinfo("A propos", "Jeu du pendu\n\nProgramme sous licence GPL3")
         
         if hasattr(self.parent, command):
