@@ -2,6 +2,7 @@ import tkinter as tk
 import xml.etree.ElementTree as ET
 from Themes import Themes
 from tkinter import messagebox
+from Edition import Edition
 
 class PenduMenu:
     """ 
@@ -52,7 +53,11 @@ class PenduMenu:
 
         if command == "a_propos":
             messagebox.showinfo("A propos", "Jeu du pendu\n\nProgramme sous licence GPL3")
-        
+
+        if command == "editer_mots": 
+            self.edition = Edition(tk.Toplevel(self.root))
+            
+
         if hasattr(self.parent, command):
             func = getattr(self.parent, command)
             func()

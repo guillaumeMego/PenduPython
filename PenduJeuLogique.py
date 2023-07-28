@@ -21,6 +21,7 @@ class PenduJeuLogique:
     """
     def __init__(self, fenetre):
         self.fenetre = fenetre
+        self.fenetre.title("Jeu du pendu")
         self.pendu = None 
         self.mots_du_theme = [] 
         self.mot_secret = ""
@@ -30,7 +31,6 @@ class PenduJeuLogique:
         self.themes = []
         self.theme_choisi = None
 
-        
 
     def mettre_a_jour_theme_selectionne(self, theme):
         """

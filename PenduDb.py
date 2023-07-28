@@ -37,6 +37,21 @@ class PenduDb:
         self.c.execute("INSERT INTO mots (mot, theme_id) VALUES (?, ?)", (mot, theme_id))
         self.conn.commit()
 
+    def supprimer_mot(self, mot):
+        """
+        Supprime un mot de la base de données.
+        """
+        self.c.execute("DELETE FROM mots WHERE mot=?", (mot,))
+        self.conn.commit()
+
+    def modifier_mot(self, ancien_mot, nouveau_mot):
+        """
+        Modifie un mot dans la base de données.
+        """
+        self.c.execute("UPDATE mots SET mot=? WHERE mot=?", (nouveau_mot, ancien_mot))
+        self.conn.commit()
+
+
     def ajouter_theme(self, nom_theme):
         """
         Ajoute un thème dans la base de données.
@@ -77,14 +92,16 @@ class PenduDb:
             self.ajouter_theme("Designer")
 
         if not self.lister_mots_par_theme("Développeur"):
-            self.ajouter_mot("ordinateur", "Développeur")
-            self.ajouter_mot("smartphone", "Développeur")
+            self.ajouter_mot("fonction", "Développeur")
+            self.ajouter_mot("python", "Développeur")
             self.ajouter_mot("programmation", "Développeur")
             self.ajouter_mot("algorithmique", "Développeur")
+            self.ajouter_mot("variable", "Développeur")
 
         if not self.lister_mots_par_theme("Designer"):
             self.ajouter_mot("graphisme", "Designer")
-            self.ajouter_mot("peinture", "Designer")
+            self.ajouter_mot("couleur", "Designer")
             self.ajouter_mot("dessin", "Designer")
             self.ajouter_mot("typographie", "Designer")
+            self.ajouter_mot("logo", "Designer")
 
